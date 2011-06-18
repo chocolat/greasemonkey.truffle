@@ -1,0 +1,23 @@
+(root source.js.greasemonkey
+    (zone support.class.greasemonkey
+        (match unsafeWindow
+            (boundary.both)))
+    (zone support.function.greasemonkey
+        (match
+            (regex [\bGM_(registerMenuCommand|xmlhttpRequest|setValue|getValue|log|openInTab|addStyle)\b(?=\()])))
+    (zone meta.header.greasemonkey
+        (start [// ==UserScript==])
+        (end
+            (regex [// ==/UserScript==\s*]))
+        (subzones
+            (zone meta.directive.standard.greasemonkey
+                (match
+                    (regex [// (@(name|namespace|description|include|exclude))\b\s*(.+\s+)?]
+                        (3 string.unquoted.greasemonkey)
+                        (1 keyword.other.greasemonkey))))
+            (zone meta.directive.nonstandard.greasemonkey
+                (match
+                    (regex [// (@(\S+))\b\s*(.+\s+)?]
+                        (3 string.unquoted.greasemonkey)
+                        (1 keyword.other.greasemonkey))))))
+    (include source.js))

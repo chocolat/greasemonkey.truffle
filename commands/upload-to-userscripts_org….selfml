@@ -1,0 +1,17 @@
+(trigger
+    (key [[cmd]U]))
+
+(name [Upload to Userscripts.org…])
+
+(only-in source.js.greasemonkey)
+
+(input document)
+
+(output tooltip)
+
+(save file)
+
+(script [#!/usr/bin/env ruby
+
+require "#{ENV['TM_BUNDLE_SUPPORT']}/greasemonkey.rb"
+Greasemonkey.new.upload_to_userscripts])

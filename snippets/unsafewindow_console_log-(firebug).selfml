@@ -1,0 +1,8 @@
+(name console.log)
+
+(trigger
+    (tab clog))
+
+(only-in source.js.greasemonkey)
+
+(snippet [console.log("%{1="Debug: %o"}", %{2="object"});])

@@ -1,0 +1,16 @@
+(trigger)
+
+(name [Toggle Logs in Document / Selection])
+
+(only-in source.js.greasemonkey)
+
+(input selection)
+
+(output replace-selected)
+
+(save nothing)
+
+(script [#!/usr/bin/env ruby
+
+require "#{ENV['TM_BUNDLE_SUPPORT']}/greasemonkey.rb"
+Greasemonkey.new.toggle_log_comments])

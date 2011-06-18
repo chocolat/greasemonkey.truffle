@@ -1,0 +1,17 @@
+(trigger
+    (key [[cmd]D]))
+
+(name [Update Metadata])
+
+(only-in source.js.greasemonkey)
+
+(input document)
+
+(output tooltip)
+
+(save nothing)
+
+(script [#!/usr/bin/env ruby
+
+require "#{ENV['TM_BUNDLE_SUPPORT']}/greasemonkey.rb"
+Greasemonkey.new.update_metadata])

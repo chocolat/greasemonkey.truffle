@@ -1,0 +1,8 @@
+(name GM_log)
+
+(trigger
+    (tab log))
+
+(only-in source.js.greasemonkey)
+
+(snippet [GM_log(%{1="\"%{2=\"info\"}\""});])

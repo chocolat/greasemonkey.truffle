@@ -1,0 +1,8 @@
+(name GM_addStyle)
+
+(trigger
+    (tab css))
+
+(only-in source.js.greasemonkey)
+
+(snippet [GM_addStyle("%{1="CSS"}");])

@@ -1,0 +1,14 @@
+(trigger
+    (key [[ctrl][shift]H]))
+
+(name XPath)
+
+(only-in source.js.greasemonkey)
+
+(input nothing)
+
+(output tooltip)
+
+(save nothing)
+
+(script [exit_show_html "<meta http-equiv='Refresh' content='0;URL=http://www.w3schools.com/xpath/'>"])

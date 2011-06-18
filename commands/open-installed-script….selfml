@@ -1,0 +1,17 @@
+(trigger
+    (key [[ctrl][alt][cmd]G]))
+
+(name [Open Installed Script…])
+
+(only-in source.js.greasemonkey)
+
+(input nothing)
+
+(output tooltip)
+
+(save nothing)
+
+(script [#!/usr/bin/env ruby
+
+require "#{ENV['TM_BUNDLE_SUPPORT']}/greasemonkey.rb"
+Greasemonkey.new.open_installed_script])

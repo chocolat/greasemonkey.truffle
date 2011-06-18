@@ -1,0 +1,9 @@
+(name GM_openInTab)
+
+(trigger
+    (tab tab))
+
+(only-in source.js.greasemonkey)
+
+(snippet [GM_openInTab(%{1="\"%{2=\"http://www.example.com\"}\""});
+%{0}])

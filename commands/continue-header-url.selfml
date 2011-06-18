@@ -1,0 +1,17 @@
+(trigger
+    (key [[cancel]]))
+
+(name [Continue Header URL])
+
+(only-in [source.js.greasemonkey meta.header meta.directive])
+
+(input document)
+
+(output after-selected)
+
+(save nothing)
+
+(script [#!/usr/bin/env ruby
+
+require "#{ENV['TM_BUNDLE_SUPPORT']}/greasemonkey.rb"
+Greasemonkey.new.continue_header_url])

@@ -1,0 +1,14 @@
+(trigger
+    (key [[ctrl][shift]H]))
+
+(name [Gecko DOM Element])
+
+(only-in source.js.greasemonkey)
+
+(input nothing)
+
+(output tooltip)
+
+(save nothing)
+
+(script [exit_show_html "<meta http-equiv='Refresh' content='0;URL=http://developer.mozilla.org/en/docs/DOM:element#Properties'>"])

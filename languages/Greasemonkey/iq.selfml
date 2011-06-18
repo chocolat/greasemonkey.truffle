@@ -1,0 +1,9 @@
+(detector
+    (extension user.js))
+
+(detector
+    (content-matches [// ==UserScript==]))
+
+(folding
+    (start [// ==UserScript==])
+    (stop [// ==/UserScript==]))

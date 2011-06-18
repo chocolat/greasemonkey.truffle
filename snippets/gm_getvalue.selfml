@@ -1,0 +1,8 @@
+(name GM_getValue)
+
+(trigger
+    (tab get))
+
+(only-in source.js.greasemonkey)
+
+(snippet [GM_getValue("%{1="key"}", %{2="\"%{3=\"default value\"}\""});])

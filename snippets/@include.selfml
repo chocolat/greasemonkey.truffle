@@ -1,0 +1,8 @@
+(name @include)
+
+(trigger
+    (tab i))
+
+(only-in [source.js.greasemonkey meta.header])
+
+(snippet [// @include       %{1="http://"}%{0}])

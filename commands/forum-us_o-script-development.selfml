@@ -1,0 +1,14 @@
+(trigger
+    (key [[ctrl][shift]H]))
+
+(name [Forum: US.O Script Development])
+
+(only-in source.js.greasemonkey)
+
+(input nothing)
+
+(output tooltip)
+
+(save nothing)
+
+(script [open "http://userscripts.org/forums/1"])

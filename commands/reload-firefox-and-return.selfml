@@ -1,0 +1,17 @@
+(trigger
+    (key [[shift][cmd]R]))
+
+(name [Reload Firefox and Return])
+
+(only-in source.js.greasemonkey)
+
+(input nothing)
+
+(output tooltip)
+
+(save file)
+
+(script [#!/usr/bin/env ruby
+
+require "#{ENV['TM_BUNDLE_SUPPORT']}/greasemonkey.rb"
+Greasemonkey.new.reload_firefox(5)  # Return in 5 secs])

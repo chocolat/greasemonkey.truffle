@@ -1,0 +1,8 @@
+(name GM_setValue)
+
+(trigger
+    (tab set))
+
+(only-in source.js.greasemonkey)
+
+(snippet [GM_setValue("%{1="key"}", %{2="\"%{3=\"value\"}\""});])
