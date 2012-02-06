@@ -5,4 +5,4 @@
 
 (only-in source.js.greasemonkey)
 
-(snippet [GM_log(%{1="\"%{2=\"info\"}\""});])
+(snippet [GM_log(%{1=""%{2="info"}""});])
