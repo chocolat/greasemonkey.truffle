@@ -7,4 +7,4 @@
 
 (snippet [GM_registerMenuCommand("%{1="Command Name"}", %{3="function() {
 	%{0}
-\"}});])
+\\"}});])

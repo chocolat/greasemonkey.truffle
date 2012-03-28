@@ -5,4 +5,4 @@
 
 (only-in source.js.greasemonkey)
 
-(snippet [GM_setValue("%{1="key"}", %{2=""%{3="value"}""});])
+(snippet [GM_setValue("%{1="key"}", %{2="\"%{3="value"}\""});])

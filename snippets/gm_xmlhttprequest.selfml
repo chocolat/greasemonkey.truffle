@@ -7,8 +7,8 @@
 
 (snippet [GM_xmlhttpRequest({
 	method: "GET",
-	url: %{1=""%{2="http://www.example.com"}""},
+	url: %{1="\"%{2="http://www.example.com"}\""},
 	onload: %{3="function(result) {
 		%{0="var response = result.responseText;"}
-	\"} }
+	\\"} }
 });])
