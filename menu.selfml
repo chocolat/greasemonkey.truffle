@@ -1,20 +1,6 @@
-(menu command.open-installed-script…
-    ---
-    command.install-and-edit
-    command.update-metadata
-    command.uninstall-script…
-    ---
-    command.upload-to-userscripts_org…
-    ---
-    command.reload-firefox
-    command.reload-firefox-and-return
-    command.manage-gm_values
-    ---
-    command.toggle-logs-in-document-selection
-    command.remove-logs-in-document-selection
-    ---
+(menu
     (submenu Snippets
-        (submenu Header snippet.@include snippet.@exclude command.continue-header-url)
+        (submenu Header snippet.@include snippet.@exclude)
         snippet.gm_log
         [snippet.unsafewindow_console_log-(firebug)]
         ---
@@ -25,6 +11,4 @@
         snippet.gm_xmlhttprequest
         snippet.gm_registermenucommand
         snippet.gm_openintab)
-    command.documentation-for-word-selection
-    (submenu Resources command.gecko-dom-element command.xpath command.greasespot-wiki --- command.forum-us_o-script-development [command.irc-#javascript@freenode])
-    ---)
+    (submenu Resources command.gecko-dom-element command.xpath command.greasespot-wiki --- command.forum-us_o-script-development [command.irc-#javascript@freenode]))
